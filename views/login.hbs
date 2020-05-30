@@ -1,0 +1,15 @@
+<h3>Log in:</h3>
+
+        {{#if error}}
+            <font color="red">{{error}}</font> 
+        {{/if}} 
+<br><br>
+
+<div id = "login">
+    <form method = "POST" action = "/login">
+        Username: &nbsp;&nbsp; <input type = "text" name="un" ><br><br>
+        Password: &nbsp;&nbsp; <input type = "password" name="pw" ><br><br>
+        <input type="submit" value="Log in!">
+    </form>
+
+</div>

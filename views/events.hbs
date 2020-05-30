@@ -1,0 +1,100 @@
+
+    <form method = 'POST' action="/logout">
+        <input type="submit" value = "Log out"><br><br>
+    </form>
+
+    <h2>Group Events:</h2>
+
+ <div>   
+<form method="POST" action="/delgroup">
+    {{#each Events as |event|}}
+    <h3> <input type = 'checkbox' name = 'gdel' value={{event.id}}> &nbsp;&nbsp;Event Group Name:  {{event.name}}</h3>
+        {{#each event.events as |ev|}}
+        <h4>  Name:{{ev.name}}</h4>
+            <ul>
+                <li>Date: {{ev.date}}</li>
+                <li>Time: {{ev.time}}</li>
+                <li>Comments: {{ev.comments}}</li>
+                
+            </ul>
+        {{/each}}
+        <br><br>
+    {{/each}}
+    <input type="submit" value="Delete Group">
+</form>
+</div>
+
+<br><br><br><br>
+
+<div>
+    <h2>Single Events:</h2>
+    <form method = "POST" action = "/del">
+        {{#each evt}}
+        <h4> <input type = 'checkbox' name = 'del' value={{id}}>  &nbsp;&nbsp;  Name: {{name}}</h4>
+            <ul>
+                <li>Date: {{date}}</li>
+                <li>Time: {{time}}</li>
+                <li>Comments: {{comments}}</li>
+            </ul>
+        {{/each}}
+        <input type='submit' value ='Delete Single Event'>
+    </form>
+</div>
+<br><br><br><br><br><br><br><br><br>
+************************************************************************************************************************
+
+
+<div>
+<h2>Add New Single event:</h2><br><br>
+<form method = "POST" action = "events/create" id='cse'>
+    Title: <input type ="text" name = "tit"><br><br>
+    Date: <input type ="date" name = "date"><br><br>
+    Time: <input type ="number" name = "time" min='00' max='24'><br><br>
+    <textarea rows="4" cols="50" name="comment" form="cse"> comments </textarea><br><br>
+    <input type="submit" value="Add Event">
+
+</form>
+</div>
+<br><br><br><br><br>
+************************************************************************************************************************
+
+<h2>Add Group of events: </h2> <br><br<br>
+
+<form method = "POST" action = "events/gcreate" id = 'cge'>
+    Name: <input type ="text" name = "gname"><br><br>
+
+    <div>
+    Event 1: <br>
+    Title: <input type ="text" name = "gtit1"><br><br>
+    Date: <input type ="date" name = "gdate1"><br><br>
+    Time: <input type ="number" name = "gtime1" min='00' max='24'><br><br>
+    <textarea rows="4" cols="50" name="gcomment1" form="cge"> comments </textarea><br><br>
+    </div>
+
+    <br><br><br>
+
+    <div>
+    Event 2: <br>
+    Title: <input type ="text" name = "gtit2"><br><br>
+    Date: <input type ="date" name = "gdate2"><br><br>
+    Time: <input type ="number" name = "gtime2" min='00' max='24'><br><br>
+    <textarea rows="4" cols="50" name="gcomment2" form="cge"> comments </textarea><br><br>
+    </div>
+
+    <br><br><br>
+
+    <div>
+    Event 3: <br>
+    Title: <input type ="text" name = "gtit3"><br><br>
+    Date: <input type ="date" name = "gdate3"><br><br>
+    Time: <input type ="number" name = "gtime3" min='00' max='24'><br><br>
+    <textarea rows="4" cols="50" name="gcomment3" form="cge"> comments </textarea><br><br>
+    </div>
+
+    <input type="submit" value="Add Event-group">
+
+</form>
+
+<br><br><br>
+
+

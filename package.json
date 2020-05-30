@@ -1,0 +1,47 @@
+{
+  "name": "lga238-final-project",
+  "version": "1.0.0",
+  "description": "Overview:",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.13.1",
+    "mongoose-url-slugs": "^1.0.2",
+    "nodemon": "^1.12.5",
+    "passport-local": "^1.0.0",
+    "passport": "^0.4.0",
+    "req-flash": "^0.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-grunt": "^1.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "grunt": "^1.0.1",
+    "grunt-eslint": "^20.1.0",
+    "install": "^0.10.2",
+    "load-grunt-tasks": "^3.5.2",
+    "npm": "^5.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-003-fall-2017/lga238-final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-003-fall-2017/lga238-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-003-fall-2017/lga238-final-project#readme"
+}
