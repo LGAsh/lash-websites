@@ -10,7 +10,7 @@
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
-    "mongoose": "^4.13.1",
+    "mongoose": "^5.9.16",
     "mongoose-url-slugs": "^1.0.2",
     "nodemon": "^1.12.5",
     "passport-local": "^1.0.0",
